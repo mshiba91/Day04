@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_iterativr_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mshiba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/25 16:43:51 by mshiba            #+#    #+#             */
-/*   Updated: 2020/06/26 11:39:06 by mshiba           ###   ########.fr       */
+/*   Created: 2020/06/26 15:11:22 by mshiba            #+#    #+#             */
+/*   Updated: 2020/06/26 15:45:08 by mshiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <stdio.h>
-
-int ft_recursive_factorial(unsigned int n)
-
+#include <unistd.h>
+int ft_iterative_factorial(int nb)
 {
-	if ( n <= 1)
-		return 1;
-	return n* ft_recursive_factorial(n - 1);
-	}
+	int i;
+		int fact;
 
-	int main()
-{
-	
-		printf("%i\n", ft_recursive_factorial(6));
-	return 0;
-}
+		
+		f = 1;
+		i = 1;
+		while (i <= nb)
+		{
+			f = f * i;
+			i++;
+		}
+		return f;
